@@ -14,40 +14,76 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        h1, h2 { color: #00FFAB; } /* Sift Mint */
+        h1, h2, h3 { color: #00FFAB; } /* Sift Mint */
         .container { background: #161B22; padding: 30px; border-radius: 12px; border: 1px solid #30363D; }
         .highlight { color: #00FFAB; font-weight: bold; }
+        .section { margin-bottom: 30px; }
         footer { margin-top: 40px; font-size: 0.8em; text-align: center; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Sift: Privacy Policy</h1>
-        <p><strong>Effective Date: April 10, 2026</strong></p>
+        <p><strong>Effective Date: May 11, 2026</strong></p>
         
-        <p>At <span class="highlight">Sift Labs</span>, your privacy is our foundation. Sift is designed as a "Local-First" application, meaning your financial data belongs to you and stays on your device.</p>
+        <div class="section">
+            <p>At <span class="highlight">Sift Labs</span>, we believe your financial life is your business. Sift is a <strong>Personal Finance Management (PFM)</strong> tool built with "Privacy by Design." It is a <strong>Local-First</strong> application, meaning your sensitive financial data never leaves your device.</p>
+        </div>
 
-        <h2>1. Data Collection</h2>
-        <p>Sift does not collect, store, or transmit any of your personal or financial information to external servers.</p>
-        <ul>
-            <li><span class="highlight">Financial Data:</span> All income, expenses, and calibration settings are stored locally on your device's internal database.</li>
-            <li><span class="highlight">Personal Information:</span> We do not require accounts, email addresses, or phone numbers to use Sift.</li>
-        </ul>
+        <div class="section">
+            <h2>1. Data Processing and "Local-First" Architecture</h2>
+            <p>Sift does not operate a central database or cloud storage. We do not collect, store, or see your budget data.</p>
+            <ul>
+                <li><span class="highlight">Financial Data:</span> All income, expenses, and plans are stored in an encrypted local database on your device (SQLDelight). We have no access to this data.</li>
+                <li><span class="highlight">No Account Requirement:</span> You do not need to create an account, provide an email, or link a phone number to use the core features of Sift.</li>
+            </ul>
+        </div>
 
-        <h2>2. Third-Party Services</h2>
-        <p>Sift uses standard Google Play libraries for security and billing. We do not share your private financial logs with these or any other third parties.</p>
-        <ul>
-            <li><strong>Google Play Billing:</strong> Transactions are handled entirely by Google. Sift does not see or store your credit card details.</li>
-        </ul>
+        <div class="section">
+            <h2>2. Information We Collect (Google Play Billing)</h2>
+            <p>The only data "collected" by Sift is related to premium feature verification through the Google Play Store.</p>
+            <ul>
+                <li><span class="highlight">Purchase History:</span> When you upgrade to Sift Pro, Google Play provides us with a transaction ID and status to unlock your features. This is processed under the legal basis of <strong>Contractual Necessity</strong> (to provide the service you paid for).</li>
+                <li><strong>Security & Fraud:</strong> Standard Google Play Integrity signals are used to ensure the app is a legitimate version, protecting your device from tampered software.</li>
+            </ul>
+        </div>
 
-        <h2>3. Data Retention and Deletion</h2>
-        <p>Since all data is stored locally on your device, we have no access to it. To delete your data, simply uninstall the app or clear the app's cache in your phone settings.</p>
+        <div class="section">
+            <h2>3. Your Legal Rights (GDPR & Law 133/2011)</h2>
+            <p>Whether you are in the EU or Moldova, you have the following rights regarding your data:</p>
+            <ul>
+                <li><strong>Right to Access:</strong> You can view all your budget data directly in the app.</li>
+                <li><strong>Right to Portability:</strong> You can export your data to CSV format at any time using the "Export" feature.</li>
+                <li><strong>Right to Erasure:</strong> You have absolute control over your data deletion (see below).</li>
+            </ul>
+        </div>
 
-        <h2>4. Contact Us</h2>
-        <p>If you have any questions, contact us at: <strong>getsift.app@gmail.com</strong></p>
+        <div class="section" id="data-deletion">
+            <h2>4. Data Deletion and Retention</h2>
+            <p>We do not retain your financial data on any servers. You can delete 100% of your data instantly by:</p>
+            <ul>
+                <li><strong>Clearing App Data:</strong> Go to Android Settings > Apps > Sift > Storage > Clear Data.</li>
+                <li><strong>Uninstalling:</strong> Deleting the app removes the local database and all records.</li>
+                <li><strong>Purchase Records:</strong> To manage or delete your purchase history, please visit your <a href="https://pay.google.com/" style="color: #00FFAB;">Google Account Payments Center</a>.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>5. Children’s Privacy</h2>
+            <p>Sift is intended for users aged 18 and over. We do not knowingly collect any data from children under the age of 13.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Contact Us</h2>
+            <p>For any privacy-related inquiries or to exercise your data rights, contact the developer at: <br>
+            <span class="highlight">getsift.app@gmail.com</span></p>
+        </div>
     </div>
     <footer>
-        &copy; 2026 Sift Labs. All rights reserved.
+        &copy; 2026 Sift Labs. All rights reserved. <br>
+        Compliant with Moldova Law no. 133 and EU GDPR.
     </footer>
 </body>
 </html>
