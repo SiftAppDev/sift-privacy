@@ -21,6 +21,8 @@
         footer { margin-top: 40px; font-size: 0.8em; text-align: center; }
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
+        a { color: #00FFAB; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
@@ -29,61 +31,59 @@
         <p><strong>Effective Date: May 11, 2026</strong></p>
         
         <div class="section">
-            <p>At <span class="highlight">Sift Labs</span>, we believe your financial life is your business. Sift is a <strong>Personal Finance Management (PFM)</strong> tool built with "Privacy by Design." It is a <strong>Local-First</strong> application, meaning your sensitive financial data never leaves your device.</p>
+            <p>At <span class="highlight">Sift Labs</span>, we believe your financial life is your business. Sift is a <strong>Personal Finance Management (PFM)</strong> tool built with "Privacy by Design." It is a <strong>Local-First</strong> application, meaning your sensitive financial data remains on your device and is never transmitted to our servers.</p>
         </div>
 
         <div class="section">
-            <h2>1. Data Processing and "Local-First" Architecture</h2>
-            <p>Sift does not operate a central database or cloud storage. We do not collect, store, or see your budget data. Your information is your own.</p>
+            <h2>1. Local Data Processing</h2>
+            <p>Sift does not operate a central database or cloud storage for your budget data. All information you input is yours to control.</p>
             <ul>
-                <li><span class="highlight">Financial Data:</span> All income, expenses, and plans are stored in an encrypted local database on your device. We have no access to this data and it is not transmitted to any external servers.</li>
-                <li><span class="highlight">No Account Requirement:</span> You do not need to create an account, provide an email address, or link a phone number to use Sift.</li>
+                <li><span class="highlight">Financial Data:</span> All income, expenses, and plans are stored in an encrypted local database on your device. We have no access to this data.</li>
+                <li><span class="highlight">No Account Requirement:</span> Sift does not require an account, email address, or phone number for its core functionality.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>2. Information Processed by Third Parties</h2>
-            <p>To provide core services, Sift utilizes industry-standard Google Play services for transaction processing and app integrity.</p>
+            <h2>2. Diagnostics and Stability (Firebase Crashlytics)</h2>
+            <p>To ensure Sift remains reliable, we use <strong>Firebase Crashlytics</strong> (a Google service) to monitor application health.</p>
             <ul>
-                <li><span class="highlight">Purchase History:</span> When you upgrade to Sift Pro, Google Play manages the transaction. We receive only the necessary verification (transaction ID and status) to unlock your features. This is processed under the basis of <strong>Contractual Necessity</strong>.</li>
-                <li><strong>App Integrity:</strong> We use standard security signals to ensure you are using an official, untampered version of Sift, protecting your device from unauthorized software.</li>
+                <li><span class="highlight">Data Collected:</span> If the app crashes, we receive technical stack traces and device metadata (e.g., device model, OS version).</li>
+                <li><span class="highlight">Privacy Guarantee:</span> These reports do <strong>not</strong> contain your financial data, salary, or personal information. They are used exclusively for debugging and are automatically deleted after 90 days.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>3. Global Data Subject Rights</h2>
-            <p>We respect international privacy standards. Regardless of your location, you have the following rights:</p>
+            <h2>3. Third-Party Services & Billing</h2>
+            <p>Transactions are handled securely through the <strong>Google Play Billing</strong> system.</p>
             <ul>
-                <li><strong>Right to Access:</strong> You can view all your budget data directly within the application interface at any time.</li>
-                <li><strong>Right to Portability:</strong> You can export your financial data to CSV format using the built-in export tools.</li>
-                <li><strong>Right to Erasure:</strong> You maintain absolute control over the deletion of your local data.</li>
+                <li><span class="highlight">Purchase History:</span> To unlock Sift Pro features, we receive a unique transaction ID and status from Google. We do not see or store your payment card details.</li>
+                <li><strong>Security:</strong> All communication with Google Play services is encrypted in transit using industry-standard HTTPS/TLS protocols.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. Global Privacy Rights</h2>
+            <p>We respect international privacy standards, including the GDPR. Regardless of your location, you have the following rights:</p>
+            <ul>
+                <li><strong>Right to Access & Portability:</strong> You can view all your data in the app or export it to CSV format at any time.</li>
+                <li><strong>Right to Erasure:</strong> You can delete all local records instantly by uninstalling the app or clearing the app storage in your device settings.</li>
             </ul>
         </div>
 
         <div class="section" id="data-deletion">
-            <h2>4. Data Deletion</h2>
-            <p>We do not retain your financial data on any servers. You can permanently delete 100% of your data by:</p>
-            <ul>
-                <li><strong>Clearing App Storage:</strong> Navigate to your device settings to wipe the local database.</li>
-                <li><strong>Uninstallation:</strong> Deleting the app removes all local records and data stores.</li>
-                <li><strong>Purchase Management:</strong> To manage or delete your purchase history, visit your <a href="https://pay.google.com/" style="color: #00FFAB;">Google Account Center</a>.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>5. Children’s Privacy</h2>
-            <p>Sift is designed for a general adult audience (18+). We do not knowingly process data from individuals under the age of 13.</p>
+            <h2>5. Data Deletion and Management</h2>
+            <p>Since we do not host your data, "deleting your account" is as simple as removing the app from your device. For purchase history, please manage your records via the <a href="https://pay.google.com/">Google Payments Center</a>.</p>
         </div>
 
         <div class="section">
             <h2>6. Contact Us</h2>
-            <p>For any privacy-related inquiries, contact the developer directly at: <br>
+            <p>For any inquiries regarding this policy, please reach out to: <br>
             <span class="highlight">getsift.app@gmail.com</span></p>
         </div>
     </div>
     <footer>
         &copy; 2026 Sift Labs. All rights reserved. <br>
-        Global Privacy Standard & GDPR Compliant.
+        International Privacy Standard & GDPR Compliant.
     </footer>
 </body>
 </html>
