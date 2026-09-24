@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sift - Política de privacidad</title>
+    <link rel="canonical" href="https://siftappdev.github.io/sift-privacy/es/">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -18,6 +19,7 @@
         .container { background: #161B22; padding: 30px; border-radius: 12px; border: 1px solid #30363D; }
         .highlight { color: #00FFAB; font-weight: bold; }
         .section { margin-bottom: 30px; }
+        .note { font-size: 0.9em; opacity: 0.8; }
         footer { margin-top: 40px; font-size: 0.8em; text-align: center; }
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
@@ -28,62 +30,91 @@
 <body>
     <div class="container">
         <h1>Sift: Política de privacidad</h1>
-        <p><strong>Fecha de vigencia: 11 de mayo de 2026</strong></p>
-        
+        <p><strong>Fecha de vigencia: 24 de septiembre de 2026</strong></p>
+        <p class="note">Esta es una traducción. En caso de discrepancia, prevalece la versión en inglés.</p>
+
         <div class="section">
-            <p>En <span class="highlight">Sift Studio</span>, creemos que tu vida financiera es asunto tuyo. Sift es una herramienta de <strong>gestión de finanzas personales (PFM)</strong> desarrollada bajo el principio de "Privacidad por diseño". Es una aplicación local-first (prioridad local), lo que significa que tus datos financieros sensibles permanecen en tu dispositivo y nunca se transmiten a nuestros servidores.</p>
+            <p><span class="highlight">Sift</span> es una app de finanzas personales creada por <span class="highlight">Sift Studio</span>. Es <strong>local-first</strong>: tus datos financieros se guardan en tu dispositivo y nunca se envían a nosotros ni a nadie más.</p>
+            <p>Para que la app funcione de forma estable y para saber qué pantallas ayudan de verdad, Sift envía dos tipos de <strong>datos técnicos anónimos</strong> a Google Firebase: informes de errores y estadísticas de uso. Ninguno contiene nunca un importe, una categoría, una nota ni nada de lo que escribes. Esta política explica exactamente qué se envía, por qué y cómo detenerlo.</p>
         </div>
 
         <div class="section">
-            <h2>1. Procesamiento local de datos</h2>
-            <p>Sift no opera una base de datos centralizada ni almacenamiento en la nube para tus datos de presupuesto. Toda la información que ingresas está bajo tu control.</p>
+            <h2>1. Tus datos financieros se quedan en tu dispositivo</h2>
             <ul>
-                <li><span class="highlight">Datos financieros:</span> Todos los ingresos, gastos y planes se almacenan en una base de datos local encriptada en tu dispositivo. No tenemos acceso a estos datos.</li>
-                <li><span class="highlight">Sin requisito de cuenta:</span> Sift no requiere una cuenta, dirección de correo electrónico ni número de teléfono para su funcionalidad principal.</li>
+                <li><span class="highlight">Qué:</span> tus ingresos, facturas, gastos, categorías, notas, elementos recurrentes y planes.</li>
+                <li><span class="highlight">Dónde:</span> en una base de datos local en tu teléfono, protegida por el cifrado de almacenamiento integrado de tu dispositivo. No tenemos ningún servidor que la guarde y no podemos verla.</li>
+                <li><span class="highlight">Copias de seguridad:</span> las copias que creas son archivos que tú controlas, protegidos con una contraseña que tú eliges. Nunca las recibimos. Si olvidas la contraseña, la copia no se puede abrir.</li>
+                <li><span class="highlight">Sin cuenta:</span> Sift no pide correo electrónico, número de teléfono, nombre ni acceso a tu banco.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>2. Diagnóstico y estabilidad (Firebase Crashlytics)</h2>
-            <p>Para garantizar que Sift siga siendo confiable, utilizamos <strong>Firebase Crashlytics</strong> (a service de Google) para monitorear la salud de la aplicación.</p>
+            <h2>2. Informes de errores (Firebase Crashlytics)</h2>
             <ul>
-                <li><span class="highlight">Datos recopilados:</span> Si la aplicación se cierra inesperadamente, recibimos trazas de la pila técnica y metadatos del dispositivo (por ejemplo, modelo del dispositivo, versión del sistema operativo).</li>
-                <li><span class="highlight">Garantía de privacidad:</span> Estos informes no contienen tus datos financieros, salario o información personal. Se utilizan exclusivamente para la depuración de errores y se eliminan automáticamente después de 90 días.</li>
+                <li><span class="highlight">Qué se envía:</span> si la app falla, un informe técnico: el error, dónde ocurrió en el código, modelo del dispositivo, versión del sistema operativo, versión de la app y un identificador de instalación aleatorio.</li>
+                <li><span class="highlight">Qué nunca se envía:</span> tus datos financieros ni nada de lo que hayas escrito.</li>
+                <li><span class="highlight">Por qué:</span> para encontrar y corregir errores. Nuestra base legal es nuestro interés legítimo en que la app funcione.</li>
+                <li><span class="highlight">Conservación:</span> los informes de errores se eliminan automáticamente a los 90 días.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>3. Servicios de terceros y facturación</h2>
-            <p>Las transacciones se gestionan de forma segura a través del sistema de facturación de <strong>Google Play Billing</strong>.</p>
+            <h2>3. Estadísticas de uso (Firebase Analytics)</h2>
+            <p>Sift registra <strong>que</strong> ocurrieron ciertos pasos, nunca <strong>qué</strong> escribiste. Así sabemos, por ejemplo, cuántos usuarios nuevos llegan al panel o registran su primer gasto, y qué partes de la app conviene mejorar.</p>
             <ul>
-                <li><span class="highlight">Historial de compras:</span> Para desbloquear las funciones de Sift Pro, recibimos un identificador de transacción único y el estado por parte de Google. No vemos ni almacenamos los datos de tu tarjeta de pago.</li>
-                <li><strong>Seguridad:</strong> Toda la comunicación con los servicios de Google Play está cifrada en tránsito utilizando protocolos HTTPS/TLS estándar de la industria.</li>
+                <li><span class="highlight">Se recoge:</span> aperturas de la app y sesiones; qué pasos de introducción y configuración se alcanzaron (por ejemplo, «configuración completada», «primer gasto registrado», «se usó un atajo de registro rápido»); modelo del dispositivo, versión del sistema operativo, versión de la app, país e idioma; un identificador aleatorio de instalación de la app.</li>
+                <li><span class="highlight">Nunca se recoge:</span> importes, saldos, ingresos, nombres de categorías, notas ni ningún texto que escribas; tu nombre, correo, teléfono, contactos o ubicación precisa.</li>
+                <li><span class="highlight">Por qué:</span> para mejorar la app. Nuestra base legal es nuestro interés legítimo en entender qué partes de Sift ayudan a las personas.</li>
+                <li><span class="highlight">Conservación:</span> los datos detallados de eventos se eliminan a los 2 meses. Los datos vinculados a tu identificador de instalación se eliminan 14 meses después de tu último uso de la app.</li>
+                <li><span class="highlight">Cómo detenerlo:</span> pronto llegará, en una actualización, un interruptor en la app para desactivar las estadísticas de uso. Hasta entonces, puedes oponerte escribiéndonos por correo, y te ayudaremos a eliminar las estadísticas vinculadas a tu instalación cuando puedan identificarse. Sift funciona exactamente igual en ambos casos.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>4. Derechos de privacidad globales</h2>
-            <p>Respetamos los estándares internacionales de privacidad, incluido el RGPD (GDPR). Independientemente de tu ubicación, tienes los siguientes derechos:</p>
-            <ul>
-                <li><strong>Derecho de acceso y portabilidad:</strong> Puedes ver todos tus datos en la aplicación o exportarlos a formato CSV en cualquier momento.</li>
-                <li><strong>Derecho de supresión:</strong> Puedes eliminar todos los registros locales al instante desinstalando la aplicación o borrando el almacenamiento de la aplicación en los ajustes de tu dispositivo.</li>
-            </ul>
+            <h2>4. Sin publicidad</h2>
+            <p>Sift no muestra anuncios, no te rastrea en otras apps ni sitios web, y nunca vende ni comparte datos con anunciantes o intermediarios de datos. La versión actual de la app incluye, como parte de Firebase, el permiso estándar de Google para el ID de publicidad; Sift nunca lo usa para publicidad, y la próxima actualización lo elimina.</p>
+        </div>
+
+        <div class="section">
+            <h2>5. Compras (Google Play Billing)</h2>
+            <p>Sift es gratis. Sift Pro es una compra única opcional gestionada íntegramente por Google Play. La app comprueba en tu dispositivo si la compra está activa. Nunca vemos los datos de tu tarjeta ni de pago. Como vendedores, podemos ver registros de pedidos en Google Play Console (como número de pedido, fecha, precio y país), igual que cualquier desarrollador de Play. Para gestionar tu historial de compras, usa el <a href="https://pay.google.com/">Centro de pagos de Google</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Quién trata los datos por nosotros</h2>
+            <p>Los informes de errores y las estadísticas de uso los trata Google (Firebase) en nuestro nombre. Google puede tratar estos datos fuera de tu país, incluido Estados Unidos, con las garantías descritas en las <a href="https://firebase.google.com/terms/data-processing-terms">Condiciones de tratamiento de datos de Firebase</a>. No usamos ningún otro servicio de terceros.</p>
         </div>
 
         <div class="section" id="data-deletion">
-            <h2>5. Eliminación y gestión de datos</h2>
-            <p>Dado que no alojamos tus datos, "eliminar tu cuenta" es tan simple como eliminar la aplicación de tu dispositivo. Para el historial de compras, por favor gestiona tus registros a través del <a href="https://pay.google.com/">Centro de pagos de Google</a>.</p>
+            <h2>7. Tus derechos</h2>
+            <p>Según dónde vivas (por ejemplo, bajo el RGPD en la UE/EEE y el Reino Unido), tienes derecho a:</p>
+            <ul>
+                <li><span class="highlight">Acceso:</span> todos tus datos financieros son visibles en la app.</li>
+                <li><span class="highlight">Portabilidad:</span> Sift Pro puede exportar tus datos a CSV y a un archivo de copia de seguridad protegido con contraseña.</li>
+                <li><span class="highlight">Supresión:</span> desinstala la app o borra su almacenamiento en los ajustes del dispositivo. Como nunca tenemos tus datos financieros, así se eliminan por completo. Para pedirnos que eliminemos informes de errores o estadísticas de uso, escríbenos.</li>
+                <li><span class="highlight">Oposición:</span> a las estadísticas de uso, como se describe en la sección 3, en cualquier momento.</li>
+                <li><span class="highlight">Reclamación:</span> ante tu autoridad local de protección de datos.</li>
+            </ul>
         </div>
 
         <div class="section">
-            <h2>6. Contacto</h2>
-            <p>Para cualquier consulta sobre esta política, por favor ponte en contacto con nosotros en: <br>
+            <h2>8. Menores</h2>
+            <p>Sift no está dirigida a menores de 16 años y no recopilamos datos de ellos a sabiendas.</p>
+        </div>
+
+        <div class="section">
+            <h2>9. Cambios</h2>
+            <p>Si esta política cambia, actualizaremos la fecha de arriba y, si el cambio es importante, lo mencionaremos en las notas de la versión de la app.</p>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>10. Contacto</h2>
+            <p>Sift está hecha por <strong>Sift Studio</strong>. Para cualquier pregunta sobre esta política o tus datos, escribe a:<br>
             <span class="highlight">getsift.app@gmail.com</span></p>
         </div>
     </div>
     <footer>
-        &copy; 2026 Sift Studio. Todos los derechos reservados. <br>
-        Compatible con los estándares internacionales de privacidad y el RGPD.
+        &copy; 2026 Sift Studio. Todos los derechos reservados.
     </footer>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sift - Politica de confidențialitate</title>
+    <link rel="canonical" href="https://siftappdev.github.io/sift-privacy/ro/">
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -18,6 +19,7 @@
         .container { background: #161B22; padding: 30px; border-radius: 12px; border: 1px solid #30363D; }
         .highlight { color: #00FFAB; font-weight: bold; }
         .section { margin-bottom: 30px; }
+        .note { font-size: 0.9em; opacity: 0.8; }
         footer { margin-top: 40px; font-size: 0.8em; text-align: center; }
         ul { padding-left: 20px; }
         li { margin-bottom: 10px; }
@@ -28,62 +30,91 @@
 <body>
     <div class="container">
         <h1>Sift: Politica de confidențialitate</h1>
-        <p><strong>Data intrării în vigoare: 11 mai 2026</strong></p>
-        
+        <p><strong>Data intrării în vigoare: 24 septembrie 2026</strong></p>
+        <p class="note">Aceasta este o traducere. În caz de neconcordanță, prevalează versiunea în limba engleză.</p>
+
         <div class="section">
-            <p>La <span class="highlight">Sift Studio</span>, credem că viața ta financiară este doar treaba ta. Sift este un instrument de <strong>gestionare a finanțelor personale (PFM)</strong> creat pe principiul „Confidențialitate implicită” (Privacy by Design). Este o aplicație de tip <strong>Local-First</strong> (stocare locală prioritară), ceea ce înseamnă că datele tale financiare sensibile rămân pe dispozitivul tău și nu sunt transmise niciodată către serverele noastre.</p>
+            <p><span class="highlight">Sift</span> este o aplicație de finanțe personale creată de <span class="highlight">Sift Studio</span>. Este <strong>local-first</strong>: datele tale financiare sunt stocate pe dispozitivul tău și nu sunt trimise niciodată către noi sau către altcineva.</p>
+            <p>Pentru ca aplicația să rămână stabilă și ca să aflăm ce ecrane ajută cu adevărat, Sift trimite două tipuri de <strong>date tehnice anonime</strong> către Google Firebase: rapoarte de erori și statistici de utilizare. Niciunul nu conține vreodată o sumă, o categorie, o notă sau orice altceva introduci. Această politică explică exact ce se trimite, de ce și cum poți opri asta.</p>
         </div>
 
         <div class="section">
-            <h2>1. Procesarea locală a datelor</h2>
-            <p>Sift nu operează o bază de date centrală sau stocare în cloud pentru datele bugetului tău. Toate informațiile pe care le introduci sunt sub controlul tău exclusiv.</p>
+            <h2>1. Datele tale financiare rămân pe dispozitivul tău</h2>
             <ul>
-                <li><span class="highlight">Date financiare:</span> Toate veniturile, cheltuielile și planurile sunt stocate într-o bază de date locală criptată pe dispozitivul tău. Noi nu avem acces la aceste date.</li>
-                <li><span class="highlight">Fără cont obligatoriu:</span> Sift nu necesită un cont, adresă de e-mail sau număr de telefon pentru funcționalitățile sale de bază.</li>
+                <li><span class="highlight">Ce:</span> veniturile, facturile, cheltuielile, categoriile, notele, elementele recurente și planurile tale.</li>
+                <li><span class="highlight">Unde:</span> într-o bază de date locală pe telefonul tău, protejată de criptarea de stocare integrată a dispozitivului. Nu avem niciun server care să o stocheze și nu o putem vedea.</li>
+                <li><span class="highlight">Copii de rezervă:</span> copiile pe care le creezi sunt fișiere pe care le controlezi tu, protejate cu o parolă aleasă de tine. Nu le primim niciodată. Dacă uiți parola, copia nu poate fi deschisă.</li>
+                <li><span class="highlight">Fără cont:</span> Sift nu cere adresă de e-mail, număr de telefon, nume sau date de autentificare bancară.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>2. Diagnosticare și stabilitate (Firebase Crashlytics)</h2>
-            <p>Pentru a ne asigura că Sift rămâne o aplicație de încredere, folosim <strong>Firebase Crashlytics</strong> (un serviciu Google) pentru a monitoriza funcționarea corectă a aplicației.</p>
+            <h2>2. Rapoarte de erori (Firebase Crashlytics)</h2>
             <ul>
-                <li><span class="highlight">Date colectate:</span> Dacă aplicația se blochează, primim rapoarte tehnice de eroare (stack traces) și metadate despre dispozitiv (de ex., modelul dispozitivului, versiunea sistemului de operare).</li>
-                <li><span class="highlight">Garanție de confidențialitate:</span> Aceste rapoarte NU conțin datele tale financiare, salariul sau informații cu caracter personal. Ele sunt folosite exclusiv pentru remedierea erorilor și sunt șterse automat după 90 de zile.</li>
+                <li><span class="highlight">Ce se trimite:</span> dacă aplicația se blochează, un raport tehnic: eroarea, locul din cod unde a apărut, modelul dispozitivului, versiunea sistemului de operare, versiunea aplicației și un identificator aleatoriu al instalării.</li>
+                <li><span class="highlight">Ce nu se trimite niciodată:</span> datele tale financiare sau orice ai introdus.</li>
+                <li><span class="highlight">De ce:</span> pentru a găsi și a repara erorile. Temeiul nostru legal este interesul legitim ca aplicația să funcționeze.</li>
+                <li><span class="highlight">Păstrare:</span> rapoartele de erori sunt șterse automat după 90 de zile.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>3. Servicii terțe și facturare</h2>
-            <p>Tranzacțiile sunt gestionate în siguranță prin sistemul de facturare <strong>Google Play Billing</strong>.</p>
+            <h2>3. Statistici de utilizare (Firebase Analytics)</h2>
+            <p>Sift înregistrează <strong>faptul că</strong> anumiți pași au avut loc, niciodată <strong>ce</strong> ai introdus. Astfel aflăm, de exemplu, câți utilizatori noi ajung la panoul principal sau înregistrează prima cheltuială, ca să știm ce părți ale aplicației să îmbunătățim.</p>
             <ul>
-                <li><span class="highlight">Istoricul achizițiilor:</span> Pentru a debloca funcțiile Sift Pro, primim de la Google un ID unic de tranzacție și starea acesteia. Nu vedem și nu stocăm detaliile cardului tău de plată.</li>
-                <li><strong>Securitate:</strong> Toate comunicațiile cu serviciile Google Play sunt criptate în tranzit folosind protocoale standard HTTPS/TLS.</li>
+                <li><span class="highlight">Se colectează:</span> deschiderile aplicației și sesiunile; ce pași de introducere și configurare au fost parcurși (de exemplu „configurare finalizată”, „prima cheltuială înregistrată”, „a fost folosită o scurtătură de adăugare rapidă”); modelul dispozitivului, versiunea sistemului de operare, versiunea aplicației, țara și limba; un identificator aleatoriu al instalării aplicației.</li>
+                <li><span class="highlight">Nu se colectează niciodată:</span> sume, solduri, venituri, nume de categorii, note sau orice text introduci; numele tău, e-mailul, numărul de telefon, contactele sau locația exactă.</li>
+                <li><span class="highlight">De ce:</span> pentru a îmbunătăți aplicația. Temeiul nostru legal este interesul legitim de a înțelege ce părți din Sift îi ajută pe oameni.</li>
+                <li><span class="highlight">Păstrare:</span> datele detaliate despre evenimente sunt șterse după 2 luni. Datele legate de identificatorul instalării tale sunt șterse la 14 luni după ultima utilizare a aplicației.</li>
+                <li><span class="highlight">Cum oprești:</span> un comutator în aplicație pentru dezactivarea statisticilor de utilizare vine într-o actualizare viitoare. Până atunci, te poți opune scriindu-ne pe e-mail, iar noi te vom ajuta să ștergi statisticile legate de instalarea ta, acolo unde pot fi identificate. Sift funcționează exact la fel în ambele cazuri.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>4. Drepturi globale de confidențialitate</h2>
-            <p>Respectăm standardele internaționale de confidențialitate, inclusiv GDPR. Indiferent de locația ta, ai următoarele drepturi:</p>
-            <ul>
-                <li><strong>Dreptul de acces și portabilitate:</strong> Poți vizualiza toate datele tale în aplicație sau le poți exporta în format CSV în orice moment.</li>
-                <li><strong>Dreptul la ștergere:</strong> Poți șterge instantaneu toate înregistrările locale prin dezinstalarea aplicației sau prin ștergerea spațiului de stocare al aplicației din setările dispozitivului tău.</li>
-            </ul>
+            <h2>4. Fără publicitate</h2>
+            <p>Sift nu afișează reclame, nu te urmărește în alte aplicații sau site-uri și nu vinde și nu partajează niciodată date cu agenți de publicitate sau brokeri de date. Versiunea actuală a aplicației include, ca parte din Firebase, permisiunea standard Google pentru ID-ul de publicitate; Sift nu o folosește niciodată pentru publicitate, iar următoarea actualizare o elimină.</p>
+        </div>
+
+        <div class="section">
+            <h2>5. Achiziții (Google Play Billing)</h2>
+            <p>Sift este gratuit. Sift Pro este o achiziție unică opțională, gestionată integral de Google Play. Aplicația verifică pe dispozitivul tău dacă achiziția este activă. Nu vedem niciodată datele cardului sau ale plății tale. Ca vânzători, putem vedea înregistrările comenzilor în Google Play Console (de exemplu numărul comenzii, data, prețul și țara), ca orice dezvoltator Play. Pentru a-ți gestiona istoricul achizițiilor, folosește <a href="https://pay.google.com/">Centrul de plăți Google</a>.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Cine prelucrează datele în numele nostru</h2>
+            <p>Rapoartele de erori și statisticile de utilizare sunt prelucrate de Google (Firebase) în numele nostru. Google poate prelucra aceste date în afara țării tale, inclusiv în Statele Unite, cu garanțiile descrise în <a href="https://firebase.google.com/terms/data-processing-terms">Termenii de prelucrare a datelor Firebase</a>. Nu folosim niciun alt serviciu terț.</p>
         </div>
 
         <div class="section" id="data-deletion">
-            <h2>5. Ștergerea și gestionarea datelor</h2>
-            <p>Deoarece nu găzduim datele tale, „ștergerea contului” este la fel de simplă ca eliminarea aplicației de pe dispozitiv. Pentru istoricul achizițiilor, te rugăm să îți gestionezi înregistrările prin intermediul <a href="https://pay.google.com/">Google Payments Center</a>.</p>
+            <h2>7. Drepturile tale</h2>
+            <p>În funcție de locul în care trăiești (de exemplu, conform GDPR în UE/SEE și în Regatul Unit), ai dreptul la:</p>
+            <ul>
+                <li><span class="highlight">Acces:</span> toate datele tale financiare sunt vizibile în aplicație.</li>
+                <li><span class="highlight">Portabilitate:</span> Sift Pro poate exporta datele tale în CSV și într-un fișier de rezervă protejat cu parolă.</li>
+                <li><span class="highlight">Ștergere:</span> dezinstalează aplicația sau șterge-i datele din setările dispozitivului. Pentru că nu deținem niciodată datele tale financiare, astfel sunt șterse complet. Pentru a ne cere ștergerea rapoartelor de erori sau a statisticilor de utilizare, scrie-ne.</li>
+                <li><span class="highlight">Opoziție:</span> față de statisticile de utilizare, așa cum este descris în secțiunea 3, oricând.</li>
+                <li><span class="highlight">Plângere:</span> la autoritatea locală de protecție a datelor.</li>
+            </ul>
         </div>
 
         <div class="section">
-            <h2>6. Contactează-ne</h2>
-            <p>Pentru orice întrebare legată de această politică, te rugăm să ne contactezi la: <br>
+            <h2>8. Copii</h2>
+            <p>Sift nu se adresează copiilor sub 16 ani și nu colectăm cu bună știință date de la aceștia.</p>
+        </div>
+
+        <div class="section">
+            <h2>9. Modificări</h2>
+            <p>Dacă această politică se schimbă, vom actualiza data din partea de sus și, pentru modificări importante, le vom menționa în notele versiunii aplicației.</p>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>10. Contact</h2>
+            <p>Sift este creat de <strong>Sift Studio</strong>. Pentru orice întrebare despre această politică sau despre datele tale, scrie la:<br>
             <span class="highlight">getsift.app@gmail.com</span></p>
         </div>
     </div>
     <footer>
-        &copy; 2026 Sift Studio. Toate drepturile rezervate. <br>
-        Standard internațional de confidențialitate & Conform cu GDPR.
+        &copy; 2026 Sift Studio. Toate drepturile rezervate.
     </footer>
 </body>
 </html>
